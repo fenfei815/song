@@ -1,0 +1,376 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	可颂商城-蛋糕订购新鲜送达
+</title><meta name="keywords" content="可颂坊" /><meta name="description" content="可颂坊" /><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><link rel="stylesheet" type="text/css" href="css/font.css" tppabs="http://www.9izone.com/css/font.css" /><link rel="stylesheet" type="text/css" href="css/site.css" tppabs="http://www.9izone.com/css/site.css" /><link id="ctl00_CssName" rel="stylesheet" type="text/css" href="css/css.css" tppabs="http://www.9izone.com/css/css.css" /><link id="ctl00_CssStyle" rel="stylesheet" type="text/css" href="css/style.css" tppabs="http://www.9izone.com/css/style.css" /><link id="ctl00_tab" href="css/tab.css" tppabs="http://www.9izone.com/css/tab.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js" tppabs="http://www.9izone.com/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/superslide.2.1.js" tppabs="http://www.9izone.com/js/superslide.2.1.js"></script>
+    <script type="text/javascript" src="js/pcmain.js" tppabs="http://www.9izone.com/js/pcmain.js"></script>
+    <script src="js/ScrollPic.js" tppabs="http://www.9izone.com/js/ScrollPic.js" type="text/javascript"></script>
+     <script src="JavaScript/kefu.js" tppabs="http://www.9izone.com/JavaScript/kefu.js" type="text/javascript"></script>
+    <script src="JavaScript/qpxl.js" tppabs="http://www.9izone.com/JavaScript/qpxl.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/superslide.2.1.js" tppabs="http://www.9izone.com/js/superslide.2.1.js"></script>
+     <script src="JavaScript/jBox-Img/jquery.jBox-2.3.min.js" tppabs="http://www.9izone.com/JavaScript/jBox-Img/jquery.jBox-2.3.min.js" type="text/javascript"></script>
+    <script src="JavaScript/jBox-Img/i18n/jquery.jBox-zh-CN1.js" tppabs="http://www.9izone.com/JavaScript/jBox-Img/i18n/jquery.jBox-zh-CN1.js" type="text/javascript"></script>
+    <link href="JavaScript/jBox-Img/Skins/ShareRed/jbox.css" tppabs="http://www.9izone.com/JavaScript/jBox-Img/Skins/ShareRed/jbox.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            LoadMenu();
+            var index = $("#ctl00_ContentPlaceHolder1_isIndex").val();
+            if (index != 1) {
+                //$(".l-headtop").hide();
+                $(".l-header").addClass("yellow").addClass("l-headertop").removeClass("l-scrolltop");
+                $(".l-nav>li:eq(" + (index - 1) + ")").addClass("cur");
+                $(".l-nav>li:eq(" + (index - 1) + ")").siblings().removeClass("cur");
+            } else {
+                $(".l-nav").find("li:eq(0)").addClass("cur");
+                $(".l-nav").find("li:eq(0)").siblings().removeClass("cur");
+            }
+        })
+    </script>
+    <script type="text/javascript" language="javascript">
+        function ClickPur() {
+            $.jBox.open("iframe:/Page/PurchaseCenter.aspx", "采购平台协议", 750, 500, { buttons: { '关闭': true },
+                closed: function () {
+                    //刷新方法 
+                    if ($("#hhidjboxnum").val() == 1) {
+                        window.location.href = 'Purchase_plat.aspx.htm'/*tpa=http://www.9izone.com/Purchase_plat.aspx*/;
+                    }
+                }
+            });
+        }
+
+        function inSide(obj) {
+            if (this.$(obj).val() == '输入蛋糕、礼盒...') {
+                this.$(obj).val('');
+            }
+        }
+        function Onblurs(obj) {
+            if (this.$(obj).val() == '') {
+                this.$(obj).val('输入蛋糕、礼盒...');
+            }
+        }
+        function LoadMenu() {
+            $("#divNav").find("li").eq($("#ctl00_hColumns").val()).attr("id", "navHover").siblings().removeAttr("id");
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            if ($("#ctl00_hideCityId").val() == "3") {
+                $("#imghot").attr("src", "images/hotphonesh.jpg"/*tpa=http://www.9izone.com/images/hotphonesh.jpg*/);
+                $("#imghot").after("团购热线：021-54962616<br/>");
+            }
+            if ($("#ctl00_hideCityId").val() == '' || typeof ($("#ctl00_hideCityId").val()) == 'undefined') {
+                SelectCity();
+            }
+        })
+        function solaw() {
+            var citys = $("#ctl00_hideCityId").val();
+            if (citys != '') {
+                window.location.href = "http://www.9izone.com/index_" + citys + ".html";
+
+            }
+            else {
+                window.location.href = "index.html"/*tpa=http://www.9izone.com/index.html*/;
+            }
+
+        }
+        
+    </script>
+    
+    <meta name="keywords" content="可颂坊,蛋糕,深圳蛋糕,上海蛋糕,生日蛋糕,巧克力蛋糕,芝士蛋糕,乳酪蛋糕,慕斯蛋糕,鲜奶蛋糕,商务蛋糕,婚庆蛋糕,网上订蛋糕,蛋糕DIY,蛋糕预定,蛋糕团购,就爱族,可颂集团" />
+    <meta name="description" content="可颂集团就爱一族官方商城，深圳可颂坊蛋糕网上预订，深圳蛋糕、上海蛋糕—配送到家；提供健康高品质蛋糕产品、法式面包西点精品店、法式面包咖啡精品;预订电话400-0088977" />
+    <script src="js/Drop_down.js" tppabs="http://www.9izone.com/js/Drop_down.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/MSClass.js" tppabs="http://www.9izone.com/js/MSClass.js"></script>
+    <script type="text/javascript" src="js/Dragslide.js" tppabs="http://www.9izone.com/js/Dragslide.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js" tppabs="http://www.9izone.com/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="http://www.9izone.com/index.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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Ij48aW1nIHNyYz0iVXBsb2FkZmlsZS9pbWFnZXMvMjAxNzAyMTcvMjAxNzIxNzIzNDA1NTQ4MTcuanBnIi8+PC9hPjwvbGk+ZAILDxYCHwEF9Ac8bGk+DQo8YSBjbGFzcz0iaG9wYmlnIiB0aXRsZT0i57qi5Lid57uS6KO46JuL57OVIiBocmVmPSJIdG1sLzIvQ2FrZV92aWV3XzU3Nl8yLmh0bWwiPg0KPGltZyBzcmM9IlVwbG9hZGZpbGUvaW1hZ2VzLzIwMTYxMjA2LzIwMTYxMjY5MTYzMTc1MjkuanBnIiB3aWR0aD0iNDkwIiBoZWlnaHQ9IjM4OCIgY2xhc3M9ImhvcHRhYiIvPg0KPC9hPg0KPHAgY2xhc3M9InB1cnBsZSBsLXB0eHQiPg0KPGVtPue6ouS4nee7kuijuOibi+ezlSBSZWQgVmVsdmV0IENha2U8L2VtPg0KPHNwYW4gY2xhc3M9ImNsciBsLXB0eHRkb3duIj4NCjxzcGFuIGNsYXNzPSJmbCI+DQo8c3Ryb25nPjxpIGNsYXNzPSJmMjQiPu+/pTwvaT48ZW0gY2xhc3M9ImYzMCI+MTg4LjAwPC9lbT48L3N0cm9uZz4NCiA8ZW0gY2xhc3M9Im1sMjAgZjE4Ij445Y+3PC9lbT48L3NwYW4+DQo8YSBjbGFzcz0iZnIiIGhyZWY9Ikh0bWwvMi9DYWtlX3ZpZXdfNTc2XzIuaHRtbCI+56uL5Y2z6LSt5LmwPC9hPg0KPC9zcGFuPjwvcD48L2xpPg0KPGxpPg0KPGEgY2xhc3M9ImhvcGJpZyIgdGl0bGU9IuiNieiOk+a0viIgaHJlZj0iSHRtbC8yL0Nha2Vfdmlld181NzVfMi5odG1sIj4NCjxpbWcgc3JjPSJVcGxvYWRmaWxlL2ltYWdlcy8yMDE2MTEyMy8yMDE2MTEyMzEwNTQ1ODU0NS5qcGciIHdpZHRoPSI0OTAiIGhlaWdodD0iMzg4IiBjbGFzcz0iaG9wdGFiIi8+DQo8L2E+DQo8cCBjbGFzcz0icm9zeWJyb3duIGwtcHR4dCI+DQo8ZW0+6I2J6I6T5rS+IFN0cmF3YmVycnkgUGllIENha2U8L2VtPg0KPHNwYW4gY2xhc3M9ImNsciBsLXB0eHRkb3duIj4NCjxzcGFuIGNsYXNzPSJmbCI+DQo8c3Ryb25nPjxpIGNsYXNzPSJmMjQiPu+/pTwvaT48ZW0gY2xhc3M9ImYzMCI+MTk4LjAwPC9lbT48L3N0cm9uZz4NCiA8ZW0gY2xhc3M9Im1sMjAgZjE4Ij445Y+3PC9lbT48L3NwYW4+DQo8YSBjbGFzcz0iZnIiIGhyZWY9Ikh0bWwvMi9DYWtlX3ZpZXdfNTc1XzIuaHRtbCI+56uL5Y2z6LSt5LmwPC9hPg0KPC9zcGFuPjwvcD48L2xpPg0KZAINDxYCHwEFhAw8bGk+DQo8YSBjbGFzcz0iaG9wYmlnIiB0aXRsZT0i5aSP5rSb54m56JuL57OVIiBocmVmPSJIdG1sLzIvQ2FrZV92aWV3XzU3OF8yLmh0bWwiPg0KPGltZyBzcmM9IlVwbG9hZGZpbGUvaW1hZ2VzLzIwMTYxMjA1LzIwMTYxMjUxNzIyOTA2NjIuanBnIiB3aWR0aD0iMzI2IiBoZWlnaHQ9IjI1NyIgY2xhc3M9ImhvcHRhYiIvPg0KPC9hPg0KPHAgY2xhc3M9InNhbmR5YnJvd24gbC1wdHh0Ij4NCjxlbT7lpI/mtJvnibnom4vns5UgQ2hhcmxvdHRlIENha2U8L2VtPg0KPHNwYW4gY2xhc3M9ImNsciBsLXB0eHRkb3duIj4NCjxzcGFuIGNsYXNzPSJmbCI+DQo8c3Ryb25nPjxpIGNsYXNzPSJmMjQiPu+/pTwvaT48ZW0gY2xhc3M9ImYzMCI+MTg4LjAwPC9lbT48L3N0cm9uZz4NCiA8ZW0gY2xhc3M9Im1sMjAgZjE4Ij445Y+3PC9lbT48L3NwYW4+DQo8YSBjbGFzcz0iZnIiIGhyZWY9Ikh0bWwvMi9DYWtlX3ZpZXdfNTc4XzIuaHRtbCI+56uL5Y2z6LSt5LmwPC9hPg0KPC9zcGFuPjwvcD48L2xpPg0KPGxpIGNsYXNzPSJjZW50ZXIiPg0KPGEgY2xhc3M9ImhvcGJpZyIgdGl0bGU9Iue8pOe6t+awtOaenCIgaHJlZj0iSHRtbC8yL0Nha2Vfdmlld180ODlfMi5odG1sIj4NCjxpbWcgc3JjPSJVcGxvYWRmaWxlL2ltYWdlcy8yMDE2MTIwNS8yMDE2MTI1MTY0NDM5Njk1LmpwZyIgd2lkdGg9IjMyNiIgaGVpZ2h0PSIyNTciIGNsYXNzPSJob3B0YWIiLz4NCjwvYT4NCjxwIGNsYXNzPSJwdXJwbGUgbC1wdHh0Ij4NCjxlbT7nvKTnurfmsLTmnpwgTWl4ZWQgRnJ1aXQgRGVsaWdodDwvZW0+DQo8c3BhbiBjbGFzcz0iY2xyIGwtcHR4dGRvd24iPg0KPHNwYW4gY2xhc3M9ImZsIj4NCjxzdHJvbmc+PGkgY2xhc3M9ImYyNCI+77+lPC9pPjxlbSBjbGFzcz0iZjMwIj4xMjguMDA8L2VtPjwvc3Ryb25nPg0KIDxlbSBjbGFzcz0ibWwyMCBmMTgiPjblj7c8L2VtPjwvc3Bhbj4NCjxhIGNsYXNzPSJmciIgaHJlZj0iSHRtbC8yL0Nha2Vfdmlld180ODlfMi5odG1sIj7nq4vljbPotK3kubA8L2E+DQo8L3NwYW4+PC9wPjwvbGk+DQo8bGk+DQo8YSBjbGFzcz0iaG9wYmlnIiB0aXRsZT0i6I2J6I6T5ou/56C05LuRIiBocmVmPSJIdG1sLzIvQ2FrZV92aWV3XzU1N18yLmh0bWwiPg0KPGltZyBzcmM9IlVwbG9hZGZpbGUvaW1hZ2VzLzIwMTYxMjA1LzIwMTYxMjUxNTU3MTgzNjE4LmpwZyIgd2lkdGg9IjMyNiIgaGVpZ2h0PSIyNTciIGNsYXNzPSJob3B0YWIiLz4NCjwvYT4NCjxwIGNsYXNzPSJzYW5keWJyb3duIGwtcHR4dCI+DQo8ZW0+6I2J6I6T5ou/56C05LuRIFN0cmF3YmVycnkgTmFwb2xlb248L2VtPg0KPHNwYW4gY2xhc3M9ImNsciBsLXB0eHRkb3duIj4NCjxzcGFuIGNsYXNzPSJmbCI+DQo8c3Ryb25nPjxpIGNsYXNzPSJmMjQiPu+/pTwvaT48ZW0gY2xhc3M9ImYzMCI+MTg4LjAwPC9lbT48L3N0cm9uZz4NCiA8ZW0gY2xhc3M9Im1sMjAgZjE4Ij445Y+3PC9lbT48L3NwYW4+DQo8YSBjbGFzcz0iZnIiIGhyZWY9Ikh0bWwvMi9DYWtlX3ZpZXdfNTU3XzIuaHRtbCI+56uL5Y2z6LSt5LmwPC9hPg0KPC9zcGFuPjwvcD48L2xpPg0KZAIPDxYCHwEFlQE8YSBocmVmPSJodHRwOi8vd3d3Ljlpem9uZS5jb20vSHRtbC8yL1NlY0tpbGxEZXRhaWxfZ29vZHNfMl8xXzEzMC5odG1sIj48aW1nIHNyYz0iVXBsb2FkZmlsZS9pbWFnZXMvMjAxNzAyMTgvMjAxNzIxODEzODIyODUzMy5qcGciIGhlaWdodD0iNTAwIi8+PC9hPmQCEw8WAh8BBesDPGRsPjxkdD7lhbPkuo7miJHku6w8L2R0PjxkZD48YSBocmVmPSIvSGVscENlbnRlckRldGFpbF8yOC5odG1sIj7lk4HniYzliqjmgIE8L2E+PC9kZD48ZGQgY2xhc3M9ImxpbmUiPjwvZGQ+PC9kbD48ZGw+PGR0PumihOWumumhu+efpTwvZHQ+PGRkPjxhIGhyZWY9Ii9IZWxwQ2VudGVyRGV0YWlsXzI5Lmh0bWwiPumihOWumuadoeasvjwvYT48L2RkPjxkZD48YSBocmVmPSIvSGVscENlbnRlckRldGFpbF8zMC5odG1sIj7phY3pgIHmnI3liqE8L2E+PC9kZD48ZGQgY2xhc3M9ImxpbmUiPjwvZGQ+PC9kbD48ZGw+PGR0PuWVhuWKoeWQiOS9nDwvZHQ+PGRkPjxhIGhyZWY9Ii9IZWxwQ2VudGVyRGV0YWlsXzM0Lmh0bWwiPuiQpemUgOi1hOa6kDwvYT48L2RkPjxkZCBjbGFzcz0ibGluZSI+PC9kZD48L2RsPjxkbD48ZHQ+5LyB5Lia6YeH6LStPC9kdD48ZGQ+PGEgaHJlZj0iL0hlbHBDZW50ZXJEZXRhaWxfMzcuaHRtbCI+5a6a5Yi26ZuG6YeHPC9hPjwvZGQ+PC9kbD5kAhUPFgIfAQX2ATxsaSA+PHA+Q29weXJpZ2h0wqkyMDE3IOa3seWcs+WPr+migumjn+WTgeaciemZkOWFrOWPuCDmt7HlnLPluILljZflsbHljLropb/kuL3ooZfpgZPlrpjpvpnnrKzkuIDlt6XkuJrljLrljoLmiL9G5qCL5LiA5qW8PC9wPjxwPjwvcD48L2xpPjxsaT48cD7lj6/pooLpm4blm6LlrpjnvZHvvJp3d3cuY2RmLWdyb3VwLmNvbSDlpIfmoYjorrjlj6/or4HnvJblj7fvvJrnsqRJQ1DlpIcxNjEwODIyMOWPty0xPC9wPjxwPjwvcD48L2xpPmQCFw8WAh8BBaUDPFVMPjxMSSBjbGFzcz1pY29UYyA+PGEgdGFyZ2V0PSdfYmxhbmsnIGhyZWY9J2h0dHA6Ly93cGEucXEuY29tL21zZ3JkP3Y9MyZ1aW49NDczMzg1NzAzJnNpdGU9cXEmbWVudT15ZXMnPjxpbWcgYm9yZGVyPScwJyBzcmM9J2h0dHA6Ly93cGEucXEuY29tL3BhP3A9Mjo0NzMzODU3MDM6NDInIGFsdD0n54K55Ye76L+Z6YeM57uZ5oiR5Y+R5raI5oGvJyB0aXRsZT0n54K55Ye76L+Z6YeM57uZ5oiR5Y+R5raI5oGvJz48L2E+PC9MST4gIDwvVUw+ICA8VUwgY2xhc3M9d2ViWng+ICAgIDxMSSBjbGFzcz13ZWJaeC1pbj48L0xJPiAgPC9VTD4gIDxVTD48TEk+IDxIMyBjbGFzcz10aXREaD7nlLXor53lkqjor6I8L0gzPiAgICA8L0xJPiAgICA8TEk+PFNQQU4gY2xhc3M9aWNvVGw+NDAwLTAwODgtOTc3PC9TUEFOPiA8L0xJPiAgICAgICA8L1VMPmRkFhm2t/8ezzNjf/j0nuL3/JZnMOs=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgLyxauYDAL7z8HDDwL34J2mAQKjj+CXDwL6vKTtCgKW+YSrBiu2gLT8lpVstPYHhkXnhh7RjRqr" />
+</div>
+    <input name="ctl00$hideCityId" type="hidden" id="ctl00_hideCityId" value="2" />
+    <input name="ctl00$hColumns" type="hidden" id="ctl00_hColumns" value="0" />
+    <div class="l-header l-scrolltop">
+        
+<script type="text/javascript">
+    function setCookie() {
+        //ajax开始
+        $.ajax({
+            type: "Post",
+            url: "http://www.9izone.com/Ajax/RegMumber/CheckMumber.ashx",
+            data: {
+                op: "4"
+            },
+            cache: false,
+            async: false,
+            dataType: "html",
+            success: function (data) {
+                if (data == "1") {
+                    //alert("您已经成功退出登录!");
+                    //window.location.href = window.location.href;
+                    window.location.href = "index.html"/*tpa=http://www.9izone.com/index.html*/;
+                }
+                else {
+                    window.location.href = "index.html"/*tpa=http://www.9izone.com/index.html*/;
+                    //window.location.href = window.location.href;
+                    //alert("您已经成功退出登录!");
+                }
+            },
+            error: function () {
+                window.location.href = "index.html"/*tpa=http://www.9izone.com/index.html*/;
+//                window.location.href = window.location.href;
+                //alert("您已经成功退出登录!");
+            }
+        })//end ajax 
+
+    }
+</script>
+<!--<div class="m_top">
+    <div id="ctl00_Top_LogInfo" class="m_t_left" style="width: 460px;">
+    </div>
+    <div class="m_t_right">
+        <a style="cursor: pointer; display: none;" href="/Terms.html">补交款 |</a>
+        
+        <a onclick="window.external.addFavorite('http://www.9izone.com','可颂坊')" title="可颂坊"
+            style="cursor: pointer;">加入收藏</a>
+        
+    </div>
+    <div class="clea">
+    </div>
+</div>-->
+
+<div class="l-headtop">
+	<div class="wrapper">
+		<span class="clr l-top">
+			<span class="fl" >
+                <span class="l-citytips mr20">
+					<em>配送城市：</em>
+					<span class="l-seltap">
+						<em id="ctl00_Top_cityName" class="citytips">深圳</em><i class="icon"></i>
+						<ul id="ctl00_Top_cityList" class="l-seltaplist clicktab"><li data-id="2">深圳</li></ul>
+					</span>
+				</span>
+                <span id="ctl00_Top_top_l"><a href="login.html" tppabs="http://www.9izone.com/login.html">登录</a><a href="login.html" tppabs="http://www.9izone.com/login.html">注册</a></span>
+			</span>
+			<span id="ctl00_Top_top_r" class="fr"><em>客服电话：<i>400-0088-977</i></em><a href="login.html" tppabs="http://www.9izone.com/login.html">会员中心</a><a href="login.html" tppabs="http://www.9izone.com/login.html">购物车(0)</a><a href="javascript:if(confirm('http://www.cdf-group.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cdf-group.com/'" tppabs="http://www.cdf-group.com/" target="_blank">可颂官网</a></span>
+		</span>
+	</div>
+</div>
+
+        <div class="wrapper" id="divNav">
+            <ul class="l-nav">
+                <li class="cur">
+                    <a  href="index_2.html" tppabs="http://www.9izone.com/index_2.html" class="pitch">首页</a></li>
+                <li>
+                    <a href="Cake_2.html" tppabs="http://www.9izone.com/Cake_2.html">可颂—蛋糕区</a> </li>
+                <!--<li>
+                    <a href="/Train.aspx" style="display: none">可颂—DIY区</a>
+                    <div class="drop_dwon" id="drop">
+                        <div class="onemenulayout">
+                            <a href="/Train.aspx">烘焙培训区</a></div>
+                        <div class="onemenulayout">
+                            <a href="/DIY.aspx">蛋糕DIY区</a></div>
+                    </div>
+                </li>-->
+                <li>
+                    <a href="SecKill_goods_2_1.html" tppabs="http://www.9izone.com/SecKill_goods_2_1.html">可颂—跟团区</a> 
+                </li>
+                 <li>
+					<span class="l-logo">
+						<img src="images/logo.png" tppabs="http://www.9izone.com/images/logo.png"  alt="可颂坊"/>
+					</span>
+				</li>
+                <li style="display: none">
+                    <a href="Goods_2_10.html" tppabs="http://www.9izone.com/Goods_2_10.html">可颂—礼品区</a> <div class="drop_dwon" id="drop"><div class="onemenulayout"><a href="Goods_2_10.html" tppabs="http://www.9izone.com/Goods_2_10.html">中秋礼盒区</a></div></div>
+                </li>
+                <li style="display: none">
+                    <a href="Goods_2_12.html" tppabs="http://www.9izone.com/Goods_2_12.html">可颂—烘焙区</a> <div class="drop_dwon" id="drop"><div class="onemenulayout"><a href="Goods_2_12.html" tppabs="http://www.9izone.com/Goods_2_12.html">简餐类</a></div><div class="onemenulayout"><a href="Goods_2_13.html" tppabs="http://www.9izone.com/Goods_2_13.html">预烤类</a></div></div>
+                </li>
+                <li>
+                    <a href="About.html" tppabs="http://www.9izone.com/About.html">关于我们</a>
+                    
+                </li>
+                <li><a href="ChannelCoupon.html" tppabs="http://www.9izone.com/ChannelCoupon.html" style="">团券码卡验证通道</a> </li>
+                <li style="position: relative; display: none;"><a href="Purchase_plat.aspx.htm" tppabs="http://www.9izone.com/Purchase_plat.aspx" style="cursor: pointer">
+                    企业采购平台 </a>
+                    <div class="newdemo">
+                    </div>
+                </li>
+                <li><span class="l-seach">
+                    <input type="text" placeholder="请输入关键字" class="l-keyword" id="tbsearch" />
+                    <i class="icon keyclick" onclick="CheckSearch()"></i></span></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <input name="ctl00$ContentPlaceHolder1$hhidSrc" type="hidden" id="ctl00_ContentPlaceHolder1_hhidSrc" />
+    <input name="ctl00$ContentPlaceHolder1$hhidUrl" type="hidden" id="ctl00_ContentPlaceHolder1_hhidUrl" />
+    <input name="ctl00$ContentPlaceHolder1$isIndex" type="hidden" id="ctl00_ContentPlaceHolder1_isIndex" value="1" />
+    <!--banner代码开始-->
+   <div class="fullSlide l-banner" style="z-index:0">
+        <div class="bd">
+	            <ul id="ctl00_ContentPlaceHolder1_banner"><li ><a target="" title="2" href="Html/2/Cake_view_478_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_478_2.html"><img src="Uploadfile/images/20170217/2017217234270005.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20170217/2017217234270005.jpg"/></a></li><li ><a target="" title="1" href="Html/2/Cake_view_478_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_478_2.html"><img src="Uploadfile/images/20170217/20172172340554817.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20170217/20172172340554817.jpg"/></a></li></ul>
+        </div>
+        <div class="hd">
+	            <ul>
+	            </ul>
+        </div>
+        <a class="prev icon" href="javascript:void(0)"></a>
+        <a class="next icon" href="javascript:void(0)"></a>
+    </div>
+	<!--banner end-->
+	<div class="wrapper">
+		<div class="l-tlt pt50">
+			<h6>NEW  PRODUCTS</h6>
+			<span>
+				<em>新品抢先尝</em>
+			</span>
+		</div>
+		<ul id="ctl00_ContentPlaceHolder1_product1" class="l-shoplist mt45 clr"><li>
+<a class="hopbig" title="红丝绒裸蛋糕" href="Html/2/Cake_view_576_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_576_2.html">
+<img src="Uploadfile/images/20161206/2016126916317529.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20161206/2016126916317529.jpg" width="490" height="388" class="hoptab"/>
+</a>
+<p class="purple l-ptxt">
+<em>红丝绒裸蛋糕 Red Velvet Cake</em>
+<span class="clr l-ptxtdown">
+<span class="fl">
+<strong><i class="f24">￥</i><em class="f30">188.00</em></strong>
+ <em class="ml20 f18">8号</em></span>
+<a class="fr" href="Html/2/Cake_view_576_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_576_2.html">立即购买</a>
+</span></p></li>
+<li>
+<a class="hopbig" title="草莓派" href="Html/2/Cake_view_575_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_575_2.html">
+<img src="Uploadfile/images/20161123/20161123105458545.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20161123/20161123105458545.jpg" width="490" height="388" class="hoptab"/>
+</a>
+<p class="rosybrown l-ptxt">
+<em>草莓派 Strawberry Pie Cake</em>
+<span class="clr l-ptxtdown">
+<span class="fl">
+<strong><i class="f24">￥</i><em class="f30">198.00</em></strong>
+ <em class="ml20 f18">8号</em></span>
+<a class="fr" href="Html/2/Cake_view_575_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_575_2.html">立即购买</a>
+</span></p></li>
+</ul>
+		<ul id="ctl00_ContentPlaceHolder1_product2" class="l-smalltab l-shoplist clr"><li>
+<a class="hopbig" title="夏洛特蛋糕" href="Html/2/Cake_view_578_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_578_2.html">
+<img src="Uploadfile/images/20161205/2016125172290662.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20161205/2016125172290662.jpg" width="326" height="257" class="hoptab"/>
+</a>
+<p class="sandybrown l-ptxt">
+<em>夏洛特蛋糕 Charlotte Cake</em>
+<span class="clr l-ptxtdown">
+<span class="fl">
+<strong><i class="f24">￥</i><em class="f30">188.00</em></strong>
+ <em class="ml20 f18">8号</em></span>
+<a class="fr" href="Html/2/Cake_view_578_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_578_2.html">立即购买</a>
+</span></p></li>
+<li class="center">
+<a class="hopbig" title="缤纷水果" href="Html/2/Cake_view_489_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_489_2.html">
+<img src="Uploadfile/images/20161205/2016125164439695.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20161205/2016125164439695.jpg" width="326" height="257" class="hoptab"/>
+</a>
+<p class="purple l-ptxt">
+<em>缤纷水果 Mixed Fruit Delight</em>
+<span class="clr l-ptxtdown">
+<span class="fl">
+<strong><i class="f24">￥</i><em class="f30">128.00</em></strong>
+ <em class="ml20 f18">6号</em></span>
+<a class="fr" href="Html/2/Cake_view_489_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_489_2.html">立即购买</a>
+</span></p></li>
+<li>
+<a class="hopbig" title="草莓拿破仑" href="Html/2/Cake_view_557_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_557_2.html">
+<img src="Uploadfile/images/20161205/20161251557183618.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20161205/20161251557183618.jpg" width="326" height="257" class="hoptab"/>
+</a>
+<p class="sandybrown l-ptxt">
+<em>草莓拿破仑 Strawberry Napoleon</em>
+<span class="clr l-ptxtdown">
+<span class="fl">
+<strong><i class="f24">￥</i><em class="f30">188.00</em></strong>
+ <em class="ml20 f18">8号</em></span>
+<a class="fr" href="Html/2/Cake_view_557_2.html" tppabs="http://www.9izone.com/Html/2/Cake_view_557_2.html">立即购买</a>
+</span></p></li>
+</ul>
+		<a href="Cake_2.html" tppabs="http://www.9izone.com/Cake_2.html" class="l-more icon"></a>
+		<div class="l-tlt pt50">
+			<h6>OUR GROUP-BUYING</h6>
+			<span>
+				<em>本期团购</em>
+			</span>
+		</div>
+	</div>
+	<div id="ctl00_ContentPlaceHolder1_group" class="mt45 l-footbanner bigcenter"><a href="Html/2/SecKillDetail_goods_2_1_130.html" tppabs="http://www.9izone.com/Html/2/SecKillDetail_goods_2_1_130.html"><img src="Uploadfile/images/20170218/2017218138228533.jpg" tppabs="http://www.9izone.com/Uploadfile/images/20170218/2017218138228533.jpg" height="500"/></a></div>
+
+    <div class="l-footer clr">
+        <div class="wrapper">
+            <div class="l-footerleft fl">
+                <div id="ctl00_EndIndex" class="clr l-footnav"><dl><dt>关于我们</dt><dd><a href="HelpCenterDetail_28.html" tppabs="http://www.9izone.com/HelpCenterDetail_28.html">品牌动态</a></dd><dd class="line"></dd></dl><dl><dt>预定须知</dt><dd><a href="HelpCenterDetail_29.html" tppabs="http://www.9izone.com/HelpCenterDetail_29.html">预定条款</a></dd><dd><a href="HelpCenterDetail_30.html" tppabs="http://www.9izone.com/HelpCenterDetail_30.html">配送服务</a></dd><dd class="line"></dd></dl><dl><dt>商务合作</dt><dd><a href="HelpCenterDetail_34.html" tppabs="http://www.9izone.com/HelpCenterDetail_34.html">营销资源</a></dd><dd class="line"></dd></dl><dl><dt>企业采购</dt><dd><a href="HelpCenterDetail_37.html" tppabs="http://www.9izone.com/HelpCenterDetail_37.html">定制集采</a></dd></dl></div>
+                <span class="l-footel">
+					<i class="icon"></i><em class="f18">服务热线</em><strong class="ml20 f28">400-0088-977</strong>
+				</span>
+                <!--备案信息-->
+                <ul id="ctl00_EndAddress" class="l-copyright clr"><li ><p>Copyright©2017 深圳可颂食品有限公司 深圳市南山区西丽街道官龙第一工业区厂房F栋一楼</p><p></p></li><li><p>可颂集团官网：www.cdf-group.com 备案许可证编号：粤ICP备16108220号-1</p><p></p></li></ul>
+            </div>
+            <span class="l-footeright fr">
+				<img src="image/weixin.png" tppabs="http://www.9izone.com/image/weixin.png" alt=""  width="150" height="150" />
+				<em><img src="image/wx.png" tppabs="http://www.9izone.com/image/wx.png" style="width:20px;height:20px;">扫码关注可颂坊</em>
+			</span>
+        </div>
+         <div id="floatTools" class="float0831" style="z-index: 20000">
+            <div class="floatL">
+                <a id="aFloatTools_Show" class="btnOpen" title="查看在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'http://www.9izone.com/www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');"
+                    href="javascript:void(0);">展开</a> <a style="display: none" id="aFloatTools_Hide"
+                        class="btnCtn" title="关闭在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'http://www.9izone.com/www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');"
+                        href="javascript:void(0);">收缩</a>
+            </div>
+            <div id="divFloatToolsView" class="floatR" style="display: none">
+                <div class="tp">
+                </div>
+                <div id="ctl00_divKefu" class="cn"><UL><LI class=icoTc ><a target='_blank' href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=473385703&site=qq&menu=yes  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=473385703&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=473385703&site=qq&menu=yes"><img border='0' src="../pub.idqqimg.com/qconn/wpa/button/button_21.gif" tppabs="http://wpa.qq.com/pa?p=2:473385703:42" alt='点击这里给我发消息' title='点击这里给我发消息'></a></LI>  </UL>  <UL class=webZx>    <LI class=webZx-in></LI>  </UL>  <UL><LI> <H3 class=titDh>电话咨询</H3>    </LI>    <LI><SPAN class=icoTl>400-0088-977</SPAN> </LI>       </UL></div>
+            </div>
+        </div>
+        <input id="hhidjboxnum" type="hidden" />
+        <div style="display: none">
+            <script type="text/javascript">
+                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cspan id='cnzz_stat_icon_1000425845'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1000425845' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".fullSlide").slide({
+            titCell: ".hd ul",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            autoPage: true,
+            trigger: "click",
+            startFun: function (i) {
+                var curLi = jQuery(".fullSlide .bd li").eq(i);
+                if (!!curLi.find("img")) {
+                    curLi.css("background-image", curLi.find("img"))
+                }
+            }
+        });
+        function CheckSearch() {
+            var key = $("#tbsearch").val();
+            if (key != '' && key != '输入蛋糕、礼盒...' && key != null && key != undefined) {
+                location.href = 'http://www.9izone.com/Search_' + encodeURI(key) + '.html';
+            } else {
+                return false;
+            }
+        }
+</script>
+    </form>
+</body>
+</html>
+
